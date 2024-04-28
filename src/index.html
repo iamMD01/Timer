@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Center the timer and button horizontally */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Change the font family to Arial */
+      }
+
+      /* Style the button */
+      #r {
+        border-radius: 20px; /* Adjust the value to change the radius */
+        padding: 10px 20px; /* Add padding for better appearance */
+         background-color: #e9e9e9;/* Change button background color */
+        color: #000000; /* Change button text color */
+        border: none; /* Remove button border */
+        cursor: pointer; /* Add cursor pointer on hover */
+        font-size: 16px; /* Adjust font size */
+      }
+
+      /* Make "Current time" text bold */
+      h1 {
+        font-weight: 800; /* Make the text extra bold */
+      }
+
+      /* Style for the version number */
+      .version {
+        position: fixed;
+        bottom: 20px; /* Adjust the distance from the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        background-color: #000; /* Background color */
+        color: #fff; /* Text color */
+        padding: 5px 10px; /* Padding */
+        border-radius: 5px; /* Border radius */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Current time is <span id="t">-</span></h1>
+    <button id="r"><h3>Stop Timer</h3></button>
+    <div class="version">Version 0.0.1 Stable</div>
+    <!-- Add version number here -->
+    <script src="main.js"></script>
+  </body>
+</html>
